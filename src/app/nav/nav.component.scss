@@ -1,15 +1,5 @@
 $nav-padding: 0.5rem;
 
-@media (max-width: 650px) {
-  .nav-icon-button-row-container {
-    flex-wrap: wrap;
-  }
-}
-
-.nav-icon-button-row-container {
-  display: flex;
-}
-
 .text-button-container {
   margin-bottom: $nav-padding;
 }
