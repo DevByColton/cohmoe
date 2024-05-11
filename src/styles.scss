@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+// Global styles
+
+body {
+  margin: 0;
+  background-image: url('assets/background.png');
+  background-repeat: repeat repeat;
+  height: 100%;
+  width: 100%;
+}
+
+// Helper classes
+.d-flex { display: flex !important; }
+.flex-column { flex-direction: column !important; }
+.align-items-center { align-items: center !important; }
+.justify-content-center { justify-content: center !important; }
+.w-100 { width: 100% !important; }
+.h-100 { height: 100% !important; }
+.box-sizing-border-box { box-sizing: border-box !important; }
+.text-white { color: white !important; }

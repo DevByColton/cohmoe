@@ -1,0 +1,13 @@
+<button
+  type="button"
+  role="button"
+  class="button {{color}}"
+  [ngClass]="{ 'text-button': !!title }"
+  (click)="handleClick()">
+  @if (showIcon) { <ng-content></ng-content>}
+  @if (title) {
+    <div class="d-flex w-100 justify-content-center">
+      <div>{{title}}</div>
+    </div>
+  }
+</button>

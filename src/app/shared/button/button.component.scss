@@ -1,0 +1,61 @@
+// Button colors
+$violet: rgb(133, 20, 245);
+$blue: rgb(119,133,204);
+$salmon: rgb(241, 22, 83);
+$gray: rgb(105,105,105);
+$grayish-white: rgb(166,166,166);
+$steam-blue: rgb(42, 71, 94);
+
+// Button color properties
+@mixin colorProperties($color) {
+  border-color: $color;
+  background: color-mix(in srgb, $color 10%, transparent);
+  color: $color;
+
+  &:hover {
+    background: color-mix(in srgb, $color 35%, transparent);
+    cursor: pointer;
+  }
+}
+
+// Button styles
+.button {
+  display: flex;
+  align-items: center;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid;
+  transition: background 0.3s ease;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+
+  &.text-button {
+    @include colorProperties($grayish-white);
+    width: 125px;
+    padding-inline: 0.15rem;
+    padding-block: 0.15rem;
+    font-size: 1.5rem;
+  }
+
+  &.violet {
+    @include colorProperties($violet);
+  }
+
+  &.blue {
+    @include colorProperties($blue);
+  }
+
+  &.salmon {
+    @include colorProperties($salmon);
+  }
+
+  &.gray {
+    @include colorProperties($gray);
+  }
+
+  &.steam-blue {
+    @include colorProperties($steam-blue);
+  }
+}
