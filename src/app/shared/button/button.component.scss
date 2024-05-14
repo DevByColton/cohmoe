@@ -22,8 +22,8 @@ $steam-blue: rgb(42, 71, 94);
 .button {
   display: flex;
   align-items: center;
-  padding-inline: 1rem;
-  padding-block: 1rem;
+  padding-inline: 0.5rem;
+  padding-block: 0.5rem;
   border-radius: 0.5rem;
   border: 0.2rem solid;
   transition: background 0.3s ease;
@@ -33,7 +33,7 @@ $steam-blue: rgb(42, 71, 94);
 
   &.text-button {
     @include colorProperties($grayish-white);
-    width: 125px;
+    width: 90px;
     padding-inline: 0.15rem;
     padding-block: 0.15rem;
     font-size: 1.5rem;
