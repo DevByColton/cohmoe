@@ -1,4 +1,4 @@
-import {Component, inject} from '@angular/core';
+import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
 import {ButtonComponent} from "../shared/button/button.component";
 import {Router, RouterLink} from "@angular/router";
 
@@ -10,7 +10,8 @@ import {Router, RouterLink} from "@angular/router";
     RouterLink
   ],
   templateUrl: './nav.component.html',
-  styleUrl: './nav.component.scss'
+  styleUrl: './nav.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NavComponent {
 
