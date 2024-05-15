@@ -1,19 +1,7 @@
-$nav-padding: 0.5rem;
-
-.nav-container {
-  padding: $nav-padding;
-}
-
-.button-margin-right {
-  margin-right: $nav-padding;
-}
-
 .img-logo-container {
   object-fit: contain;
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .img-logo {
-  max-width: 200px;
+  max-width: 200px !important;
 }
