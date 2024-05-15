@@ -1,13 +1,15 @@
 import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
 import {ButtonComponent} from "../shared/button/button.component";
 import {Router, RouterLink} from "@angular/router";
+import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-nav',
   standalone: true,
   imports: [
     ButtonComponent,
-    RouterLink
+    RouterLink,
+    NgOptimizedImage
   ],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.scss',
