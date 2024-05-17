@@ -1,15 +1,19 @@
-import {Component, inject} from '@angular/core';
+import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
 import {ButtonComponent} from "../shared/button/button.component";
-import {Router} from "@angular/router";
+import {Router, RouterLink} from "@angular/router";
+import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-nav',
   standalone: true,
   imports: [
-    ButtonComponent
+    ButtonComponent,
+    RouterLink,
+    NgOptimizedImage
   ],
   templateUrl: './nav.component.html',
-  styleUrl: './nav.component.scss'
+  styleUrl: './nav.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NavComponent {
 

@@ -1,13 +1,26 @@
-$nav-padding: 0.5rem;
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
 
-.text-button-container {
-  margin-bottom: $nav-padding;
+.nav-bar-width {
+  width: 100%;
 }
 
-.nav-container {
-  padding: $nav-padding;
+@include media-breakpoint-up(md) {
+  .nav-bar-width {
+    width: 60%;
+  }
 }
 
-.button-margin-right {
-  margin-right: $nav-padding;
+.nav-background-color {
+  background: color-mix(in srgb, black 20%, transparent);
+  border-radius: 0.5rem;
+}
+
+.img-logo-container {
+  object-fit: contain;
+}
+
+.img-logo {
+  max-width: 200px !important;
 }
