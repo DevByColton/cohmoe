@@ -1,6 +1,19 @@
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+.nav-bar-width {
+  width: 100%;
+}
+
+@include media-breakpoint-up(md) {
+  .nav-bar-width {
+    width: 60%;
+  }
+}
+
 .nav-background-color {
-  //background: color-mix(in srgb, rgb(28, 4, 51) 90%, transparent);
-  background: white;
+  background: color-mix(in srgb, black 20%, transparent);
   border-radius: 0.5rem;
 }
 
