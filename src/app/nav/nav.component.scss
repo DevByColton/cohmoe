@@ -3,24 +3,18 @@
 @import 'bootstrap/scss/mixins';
 
 .nav-bar-width {
+  margin-top: 0;
   width: 100%;
 }
 
 @include media-breakpoint-up(md) {
   .nav-bar-width {
+    margin-top: 0.5rem;
     width: 60%;
   }
 }
 
 .nav-background-color {
-  background: color-mix(in srgb, black 20%, transparent);
+  background: color-mix(in srgb, black 35%, transparent);
   border-radius: 0.5rem;
-}
-
-.img-logo-container {
-  object-fit: contain;
-}
-
-.img-logo {
-  max-width: 200px !important;
 }
