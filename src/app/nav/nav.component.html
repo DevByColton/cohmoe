@@ -1,10 +1,18 @@
 <div class="d-flex justify-content-center w-100">
   <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-start align-items-center h-100 p-2 nav-background-color nav-bar-width">
 
-    <a class="me-0 me-md-auto mb-0 mb-2 mb-md-0" [routerLink]="['']">
-      <img [ngSrc]="'assets/favicon-transparent.png'" priority="true" alt="Logo" width="64" height="64" class="me-2">
-      <!--<img src="assets/cohmoe with logo.png" class="img-logo" priority="true" alt="cohmoe">-->
-    </a>
+    <div class="d-flex justify-content-between justify-content-md-start align-items-center me-0 me-md-auto mb-0 mb-2 mb-md-0">
+      <a class="me-2" [routerLink]="['']">
+        <img [ngSrc]="'assets/favicon-transparent.png'" priority="true" alt="Logo" width="64" height="64" class="me-2">
+      </a>
+      <app-button
+        [color]="'grayish-white'"
+        [action]="'click'"
+        [title]="'Blog'"
+        [showIcon]="false"
+        (clickEvent)="routeTo('blog')">
+      </app-button>
+    </div>
 
     <div class="d-flex">
       <app-button

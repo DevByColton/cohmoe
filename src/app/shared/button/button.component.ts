@@ -19,7 +19,7 @@ export class ButtonComponent {
   @Input() action: 'link' | 'click' = 'link';
   @Input() link?: string;
 
-  @Output() clickEvent = new EventEmitter<void>();
+  @Output() clickEvent: EventEmitter<void> = new EventEmitter<void>();
 
   handleClick(): void {
     if (this.action === 'link' && this.link) {

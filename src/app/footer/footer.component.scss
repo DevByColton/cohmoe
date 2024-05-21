@@ -1,3 +1,11 @@
 .footer-background-color {
-  background: color-mix(in srgb, black 20%, transparent);
+  background: color-mix(in srgb, black 35%, transparent);
+}
+
+.img-logo-container {
+  object-fit: contain;
+}
+
+.img-logo {
+  max-width: 150px !important;
 }
