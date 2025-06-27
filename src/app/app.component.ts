@@ -5,12 +5,11 @@ import {DatePipe} from "@angular/common";
 import {FooterComponent} from "./footer/footer.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, NavComponent, DatePipe, FooterComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'app-root',
+    imports: [RouterOutlet, NavComponent, DatePipe, FooterComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
 

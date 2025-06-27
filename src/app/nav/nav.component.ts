@@ -4,16 +4,15 @@ import {Router, RouterLink} from "@angular/router";
 import {NgOptimizedImage} from '@angular/common';
 
 @Component({
-  selector: 'app-nav',
-  standalone: true,
-  imports: [
-    ButtonComponent,
-    RouterLink,
-    NgOptimizedImage
-  ],
-  templateUrl: './nav.component.html',
-  styleUrl: './nav.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'app-nav',
+    imports: [
+        ButtonComponent,
+        RouterLink,
+        NgOptimizedImage
+    ],
+    templateUrl: './nav.component.html',
+    styleUrl: './nav.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NavComponent {
 
