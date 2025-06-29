@@ -1,18 +1,18 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {NgClass, NgStyle} from "@angular/common";
+import {NgClass} from "@angular/common";
+
 @Component({
-    selector: 'app-button',
-    imports: [
-        NgStyle,
-        NgClass
-    ],
-    templateUrl: './button.component.html',
-    styleUrl: './button.component.scss'
+  selector: 'app-button',
+  imports: [
+    NgClass
+  ],
+  templateUrl: './button.component.html',
+  styleUrl: './button.component.scss'
 })
 export class ButtonComponent {
 
-  @Input() title: string = '';
-  @Input() showTitle: boolean = true;
+  @Input() text: string = '';
+  @Input() showText: boolean = false;
   @Input() showIcon: boolean = true;
   @Input() color: 'violet' | 'blue' | 'salmon' | 'gray' | 'steam-blue' | 'grayish-white' = 'violet';
   @Input() action: 'link' | 'click' = 'link';

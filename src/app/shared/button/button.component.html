@@ -2,12 +2,16 @@
   type="button"
   role="button"
   class="button {{color}}"
-  [ngClass]="{ 'text-button': !!title }"
+  [ngClass]="{ 'text-button': showText }"
   (click)="handleClick()">
-  @if (showIcon) { <ng-content></ng-content>}
-  @if (title) {
-    <div class="d-flex w-100 justify-content-center">
-      <div>{{title}}</div>
-    </div>
-  }
+  
+  <div class="d-flex align-items-center">
+    @if (showIcon) {
+      <ng-content></ng-content>
+    }
+    @if (showText && text) {
+      <p>{{text}}</p>
+    }
+  </div>
+  
 </button>

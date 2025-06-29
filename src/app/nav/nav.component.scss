@@ -14,7 +14,10 @@
   }
 }
 
-.nav-background-color {
-  background: color-mix(in srgb, black 35%, transparent);
-  border-radius: 0.5rem;
+.nav-buttons-border {
+  border-image: url('/assets/WebsiteBasicWrapper.png');
+  border-image-slice: 50 fill;
+  border-image-width: 30px;
+  padding: 1rem;
+  background: transparent;
 }

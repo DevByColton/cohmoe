@@ -33,9 +33,7 @@ $steam-blue: rgb(42, 71, 94);
 
   &.text-button {
     @include colorProperties($grayish-white);
-    width: 75px;
-    padding-inline: 0.1rem;
-    padding-block: 0.1rem;
+    padding-block: 0.2rem;
     font-size: 1.25rem;
   }
 
