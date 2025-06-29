@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {NgClass} from "@angular/common";
+import {NgClass} from '@angular/common';
 
 @Component({
   selector: 'app-button',
@@ -14,6 +14,7 @@ export class ButtonComponent {
   @Input() text: string = '';
   @Input() showText: boolean = false;
   @Input() showIcon: boolean = true;
+  @Input() showChecked: boolean = false;
   @Input() color: 'violet' | 'blue' | 'salmon' | 'gray' | 'steam-blue' | 'grayish-white' = 'violet';
   @Input() action: 'link' | 'click' = 'link';
   @Input() link?: string;

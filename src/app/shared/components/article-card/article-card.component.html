@@ -1,12 +1,15 @@
 <div class="card article-border w-100 mb-md-4 mb-3">
   <div class="card-body pt-1">
     
-    <div class="d-flex w-100 align-items-center mb-md-5 mb-4">
+    <div class="d-flex w-100 align-items-center mb-md-3 mb-2">
       <p class="lato-bold fs-4 m-0 me-auto">{{$title()}}</p>
-      <ng-content select="app-button" />
     </div>
     
     <ng-content />
+    
+    <div class="d-flex flex-md-row flex-column">
+      <ng-content select="app-button" />
+    </div>
     
   </div>
 </div>

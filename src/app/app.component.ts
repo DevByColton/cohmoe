@@ -1,6 +1,6 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
-import {NavComponent} from "./nav/nav.component";
+import {NavComponent} from './nav/nav.component';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +9,4 @@ import {NavComponent} from "./nav/nav.component";
   styleUrl: './app.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AppComponent {
-}
+export class AppComponent { }

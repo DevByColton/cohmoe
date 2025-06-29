@@ -1,7 +1,6 @@
 // Global styles
 
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 800
+// https://fonts.google.com/specimen/Lato
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 .lato-thin {
@@ -80,4 +79,12 @@ body {
   background-attachment: fixed;
   height: 100%;
   width: 100%;
+}
+
+.button-group-border {
+  border-image: url('/assets/WebsiteBasicWrapper.png');
+  border-image-slice: 50 fill;
+  border-image-width: 30px;
+  padding: 1rem;
+  background: transparent;
 }

@@ -2,7 +2,7 @@
   type="button"
   role="button"
   class="button {{color}}"
-  [ngClass]="{ 'text-button': showText }"
+  [ngClass]="{ 'text-button': showText, 'checked': showChecked }"
   (click)="handleClick()">
   
   <div class="d-flex align-items-center">
@@ -10,7 +10,7 @@
       <ng-content></ng-content>
     }
     @if (showText && text) {
-      <p>{{text}}</p>
+      <div class="lato-regular fs-6" [ngClass]="{ 'ms-2': showIcon }">{{text}}</div>
     }
   </div>
   
