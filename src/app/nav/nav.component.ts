@@ -1,11 +1,11 @@
-import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
-import {ButtonComponent} from "../shared/button/button.component";
-import {Router, RouterLink} from "@angular/router";
+import {ChangeDetectionStrategy, Component, inject, input, signal, WritableSignal} from '@angular/core';
+import {ButtonComponent} from '../shared/button/button.component';
+import {Router, RouterLink} from '@angular/router';
 import {NgOptimizedImage} from '@angular/common';
+import {AppRoutes} from '../app.routes';
 
 @Component({
   selector: 'app-nav',
-  standalone: true,
   imports: [
     ButtonComponent,
     RouterLink,
@@ -18,8 +18,12 @@ import {NgOptimizedImage} from '@angular/common';
 export class NavComponent {
 
   private router: Router = inject(Router);
+  readonly appRoutes = AppRoutes;
+  
+  $currentRoute = input<string>(AppRoutes.RESUME_PATH);
 
-  routeTo(route: string): void {
-    this.router.navigate([route]).then(() => {});
+  handleRoute(nextRoute: string): void {
+    this.router.navigate([`/${nextRoute}`]).then(() => {
+    });
   }
 }

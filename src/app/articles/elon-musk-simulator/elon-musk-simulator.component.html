@@ -1,0 +1,49 @@
+<app-article-card [$title]="'Elon Musk Simulator'">
+  <app-button
+          [color]="'salmon'"
+          [action]="'link'"
+          [showText]="true"
+          [text]="'Elon Musk Simulator repo'"
+          [link]="'https://github.com/DevByColton/EMS'">
+    <svg xmlns="http://www.w3.org/2000/svg"
+         width="1.0rem"
+         height="1.0rem"
+         fill="currentColor"
+         class="bi bi-github"
+         viewBox="0 0 16 16">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+    </svg>
+  </app-button>
+  
+  <p class="lato-bold">// ELON MUSK SIMULATOR</p>
+  <hr class="mb-2">
+  <p class="mb-1">
+    This is one of the first actual games I ever made. A couple years ago we were with some friends. I was talking
+    about how I wanted to start making games. Somehow, the conversation lead to someone saying "It'd be funny if there
+    was a game about Elon Musk shooting blunts out of his mouth at Tesla's and Space X vehicles." Naturally, this was the
+    first game I decided to make. The only thing I had to decide on then was how the game would play. I decided that 
+    a <a href="https://en.wikipedia.org/wiki/Geometry_Wars" target="_blank" rel="noopener noreferrer">Geometry Wars</a> 
+    style knock off would be appropriate. 
+  </p>
+  <p class="mb-1">
+    This was the first time I ever set out to make a game, so I had no expectation on how the code should be structured or perform. 
+    I just wanted it to work. This was also built using <a href="https://monogame.net/" target="_blank" rel="noopener noreferrer">Monogame</a>, written in C#.
+    It is pretty straight forward, point the mouse, and click to shoot. There are some astroids and Space X vehicles.
+    I never got around to the Tesla part.
+  </p>
+  <p class="mb-1">
+    The main learning of this project was mostly how the monogame framework worked, and how to use
+    the content pipeline and sprite batching. This was also where I learned the basics of collision detection,
+    making a camera that follows the player with world bounds, and the difference in projecting content to the world vs the screen.
+  </p>
+  <p class="mb-1">
+    In terms of gameplay, I was proud of myself for making some power ups that can stack. There are Speed, Big Blunts, and Blunts
+    All Directions power ups. If the player already had the power up that was trying to be picked up, it would not activate it and
+    wait for that type of power up to expire.
+  </p>
+  <p class="lato-bold">// GAMEPLAY VIDEO</p>
+  <hr class="mb-2">
+  <video width="100%" height="100%" controls muted>
+    <source src="/assets/Elon Musk Simulator.mp4" type="video/mp4" />
+  </video>
+</app-article-card>

@@ -1,5 +1,5 @@
 // Button colors
-$violet: rgb(133, 20, 245);
+$violet: rgb(164, 128, 245);
 $blue: rgb(119,133,204);
 $salmon: rgb(241, 22, 83);
 $gray: rgb(105,105,105);
@@ -15,6 +15,10 @@ $steam-blue: rgb(42, 71, 94);
   &:hover {
     background: color-mix(in srgb, $color 35%, transparent);
     cursor: pointer;
+  }
+  
+  &.checked {
+    background: color-mix(in srgb, $color 45%, transparent);
   }
 }
 
@@ -33,9 +37,7 @@ $steam-blue: rgb(42, 71, 94);
 
   &.text-button {
     @include colorProperties($grayish-white);
-    width: 75px;
-    padding-inline: 0.1rem;
-    padding-block: 0.1rem;
+    padding-block: 0.2rem;
     font-size: 1.25rem;
   }
 

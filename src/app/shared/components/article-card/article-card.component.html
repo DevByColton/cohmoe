@@ -1,0 +1,15 @@
+<div class="card article-border w-100 mb-md-4 mb-3">
+  <div class="card-body pt-1">
+    
+    <p class="lato-bold fs-4 m-0 me-auto">{{$title()}}</p>
+    
+    <div class="mt-md-3 mt-2" [ngClass]="{ 'mb-md-4 mb-3': $title().length > 0 }">
+      <ng-content />
+    </div>
+    
+    <div class="d-flex flex-md-row flex-column">
+      <ng-content select="app-button" />
+    </div>
+    
+  </div>
+</div>

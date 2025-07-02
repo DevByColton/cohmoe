@@ -1,0 +1,51 @@
+<app-article-card [$title]="'Star Keeper'">
+  <app-button
+          [color]="'salmon'"
+          [action]="'link'"
+          [showText]="true"
+          [text]="'Star Keeper repo'"
+          [link]="'https://github.com/DevByColton/StarKeeperMonogame/tree/master/StarKeeper'">
+    <svg xmlns="http://www.w3.org/2000/svg"
+         width="1.0rem"
+         height="1.0rem"
+         fill="currentColor"
+         class="bi bi-github"
+         viewBox="0 0 16 16">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+    </svg>
+  </app-button>
+  
+  <p class="lato-bold">// MY GOAL FOR STAR KEEPER - MY OWN RPG</p>
+  <hr class="mb-2">
+  <p class="mb-1">
+    This version of Star Keeper was built using <a href="https://monogame.net/" target="_blank" rel="noopener noreferrer">Monogame</a>, written in C#.
+    I set out to learn what goes into making the different systems of a game, not necessarily the graphics rendering. So,
+    Monogame was a good choice for me because it handles some lower level graphics rendering. That meant I could focus on 
+    implementing my systems. This was my first project where I wanted to make systems that could actually support a
+    game, rather than just throwing something together that works. This is a 2D project.
+  </p>
+  <p class="lato-bold">// SYSTEMS IMPLEMENTED</p>
+  <hr class="mb-2">
+  <ul class="mb-1">
+    <li>Input handling system, including mouse and keyboard, controllers, and different controller types (PS, Xbox, Nintendo, and generic). The input type can change in realtime, this can been seen in the Star Map when the glyphs change based on the input type</li>
+    <li>Generic control scheme, handling an array of control schemes that can change based on the active scene</li>
+    <li>Generic scenes and scene handling system</li>
+    <li>A camera system with resolution rendering and zoom</li>
+    <li>Circle and polygon collision detection</li>
+    <li>Entity world placement from json files</li>
+  </ul>
+  <p class="lato-bold">// GAMEPLAY VIDEO</p>
+  <hr class="mb-2">
+  <p class="mb-1">
+    The recording is all of the systems mentioned above working together. You start on your ship which has a planet
+    map. On the planet map you can choose to travel between 4 planets. Each planet area acts as a parent scene, so 
+    it load and unloads assets and data as needed to ensure that nothing is loaded unnecessarily. There is no sound to the recording.
+  </p>
+  <p class="mb-1">
+    Sidenote, it probably goes without saying that the assets are placeholders. Besides the planet map, I'm actually 
+    pretty happy with that, considering my art skills.
+  </p>
+  <video width="100%" height="100%" controls muted>
+    <source src="/assets/Star Keeper.mp4" type="video/mp4" />
+  </video>
+</app-article-card>

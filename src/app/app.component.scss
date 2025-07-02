@@ -1,13 +1,1 @@
-@import 'bootstrap/scss/functions';
-@import 'bootstrap/scss/variables';
-@import 'bootstrap/scss/mixins';
 
-.content-width {
-  width: 100%;
-}
-
-@include media-breakpoint-up(md) {
-  .content-width {
-    width: 60%;
-  }
-}
