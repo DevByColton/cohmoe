@@ -1,11 +1,15 @@
-<div class="d-flex flex-column w-100 h-100">
+<div class="d-flex flex-column">
   
-  <app-nav></app-nav>
+  <app-nav [$currentRoute]="$currentRoute()" />
   
-  <div class="d-flex justify-content-center w-100 h-100">
-    <div class="content-width p-md-0 px-3 pb-3">
-      <router-outlet />
+  @if ($currentRoute() === appRoutes.PLAY_MAESTRO) {
+    <app-play-maestro />
+  } @else {
+    <div class="d-flex justify-content-center">
+      <div class="content-width p-md-0 px-3 pb-3">
+        <router-outlet />
+      </div>
     </div>
-  </div>
+  }
 
 </div>

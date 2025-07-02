@@ -1,4 +1,7 @@
 // Global styles
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
 
 // https://fonts.google.com/specimen/Lato
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
@@ -79,6 +82,16 @@ body {
   background-attachment: fixed;
   height: 100%;
   width: 100%;
+}
+
+.content-width {
+  width: 100%;
+}
+
+@include media-breakpoint-up(md) {
+  .content-width {
+    width: 60%;
+  }
 }
 
 .button-group-border {

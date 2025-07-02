@@ -1,0 +1,26 @@
+@if (isMobile) {
+  <div class="d-flex justify-content-center">
+    <div class="content-width px-3">
+      <app-article-card>
+        <p>
+          Looks like you are trying to play on a mobile device. The game requires a keyboard and mouse to play.
+          Please try accessing this on a desktop.
+        </p>
+      </app-article-card>
+    </div>
+  </div>
+} @else {
+  <div class="d-flex justify-content-center">
+    <div class="content-width px-3">
+      <app-article-card>
+        <p>
+          You might need to resize the window for the game to fit in the screen properly. Also, sound on! There is
+          a gameplay song!
+        </p>
+      </app-article-card>
+    </div>
+  </div>
+  <div class="iframe-container px-3 pb-3">
+    <iframe src="/assets/MaestroWebExport/index.html"></iframe>
+  </div>
+}

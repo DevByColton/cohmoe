@@ -1,0 +1,4 @@
+/src/assets/Elon[[:space:]]Musk[[:space:]]Simulator.mp4 filter=lfs diff=lfs merge=lfs -text
+/src/assets/Maestro.mp4 filter=lfs diff=lfs merge=lfs -text
+/src/assets/MaestroWebExport/index.wasm filter=lfs diff=lfs merge=lfs -text
+/src/assets/Star[[:space:]]Keeper[[:space:]]Monogame.mp4 filter=lfs diff=lfs merge=lfs -text
