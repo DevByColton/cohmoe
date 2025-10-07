@@ -45,7 +45,13 @@
     Sidenote, it probably goes without saying that the assets are placeholders. Besides the planet map, I'm actually 
     pretty happy with that, considering my art skills.
   </p>
-  <video width="100%" height="100%" controls muted preload="auto" poster="/assets/StarKeeperThumbnail.png">
-    <source src="/assets/Star Keeper.mp4" type="video/mp4" />
-  </video>
+  <div class="youtube-iframe-container">
+    <iframe [src]="safeUrl"
+            title="Star Keeper Gameplay from Youtube"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+    </iframe>
+  </div>
 </app-article-card>
