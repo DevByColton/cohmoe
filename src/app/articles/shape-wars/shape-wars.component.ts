@@ -17,5 +17,5 @@ export class ShapeWarsComponent {
   
   private domSanitizer = inject(DomSanitizer);
   
-  safeUrl: SafeUrl = this.domSanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/1bVX6a6VZ1I?si=E9bylaEOMz1MolYv');
+  safeUrl: SafeUrl = this.domSanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/w0fjkGv23so?si=scJAHnFwVsNZdUSQ');
 }
